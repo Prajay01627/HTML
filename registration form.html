@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<script type="text/javascript">
+		function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+
+		
+  var x = document.forms["myForm"]["mname"].value;
+  if (x == "") {
+    alert("Middle name must be filled out");
+    return false;
+  }
+
+   var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Last name must be filled out");
+    return false;
+  }
+     var x = document.forms["myForm"]["address"].value;
+  if (x == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+
+
+  var x = document.forms["myForm"]["Gender"].value;
+  if (x == "") {
+    alert("Gender must be filled out");
+    return false;
+  }
+
+
+ 
+  var x = document.forms["myForm"]["city"].value;
+  if (x == "") {
+    alert("City must be filled out");
+    return false;
+  }
+
+  var x = document.forms["myForm"]["mobile"].value;
+  if (x == "") {
+    alert("Mobile number must be filled out");
+    return false;
+  }
+
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["image"].value;
+  if (x == "") {
+    alert("Please choose a file!(Photo)");
+    return false;
+  }
+
+  
+
+
+  	var cbox=document.getElementsByName('edu[]');
+  	if (cbox[0].checked==false && cbox[1].checked==false) 
+  	{
+    	alert("Qualifiation must be filled out");
+    	return false;
+  	}
+
+}
+
+
+</script>
+</head>
+
+<body>
+	<center>
+	<h1><mark><marquee>Registration Form</marquee></mark></h1>
+	<form method="post" name="myForm" onsubmit=" return validateForm()">
+		<table border="1" width="50%">
+			<tr>
+				<th>
+		<label>First Name</label></th>
+
+		<td><input type="text" name="fname" placeholder="Enter your name"></td><br>
+	</tr>
+		<tr>
+			<th>
+		<label>Middle name</label></th>
+		<td><input type="text" name="mname" placeholder="Enter your middle name"></td><br>
+	</tr>
+
+    <tr>
+    <th>	
+		<label>Last Name</label></th>
+		<td><input type="text" name="lname" placeholder="Enter your last name"></td><br>
+	</tr>
+
+	<tr>
+		<th>
+		
+		<label>Address</label></th>
+		<td><textarea placeholder="Enter your Address" name="address" value="address"></textarea></td><br>
+	</tr>
+
+	<tr>
+	<th>	
+		<label>Education</label></th>
+		<td><input type="checkbox" name="edu[]" value="10th">10th
+		<input type="checkbox" name="edu[]" value="12th">12th
+		<input type="checkbox" name="edu[]" value="diploma">diploma
+		<input type="checkbox" name="edu[]" value="B.E">B.E<br></td>
+	</tr>
+		<tr>
+			<th>
+		<label value="gender">Gender</label></th>
+		<td><input type="radio" name="Gender" value="male">Male
+		<input type="radio" name="Gender" value="female">Female
+		<input type="radio" name="Gender" value="other">Other</td><br>
+	</tr>
+	<tr>
+		<th>
+		
+		<label>City</label></th>
+		<td><Select name="city">
+
+			<option value="">Select your city</option>
+			<option value="nashik">Nashik</option>
+			<option value="pune">Pune</option>
+			<option value="mumbai">Mumbai</option>
+		</Select></td><br>
+	</tr>
+
+	   <tr>
+	   	<th>
+			
+		<label>Mobile No</label></th>
+		<td><input type="tel" name="mobile" placeholder="9021079423"  maxlength="10" minlength="10" pattern="[7-9]{1}[0-9]{9}"></td><br>
+	</tr>
+	<tr>
+		<th>
+		
+		<label>Email</label></th>
+		<td><input type="mail" name="email" placeholder="xyz@gmail.com"></td><br>
+		<tr>
+			<th>
+		<label>Photo</label></th>
+		<td><input type="file" name="image"></td>
+
+	</tr>
+	<tr>
+			<th>
+		<label>Submit</label></th>
+		<td><button>Submit</button></td></tr><br>
+      </tr>
+  </form>
+</center>
+	
+	<tr><th><label>Video</label><td>	
+
+	<video controls width="100%" height="100%">
+		<source src="../video/2020 IPL.mp4" type="video/mp4">
+	</video></td></th></tr>
+	<tr><th><label>Audio</label><td>
+	<audio controls>
+		<source src="../video/myaudio.mp3" type="audio/mp3"></audio></td></th></tr>
+
+	
+	
+		
+	<tr><th><label>Map sumago infotech</label><td>		
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7499.246994518436!2d73.775508!3d19.98233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd6c10f8929d7902!2sSUMAGO%20INFOTECH%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1633477575720!5m2!1sen!2sin" width="100%" height="100%" style="border:2;" allowfullscreen="" loading="lazy"></iframe></td></th></tr>
+    
+	
+	</table>
+</body>
+</html>
